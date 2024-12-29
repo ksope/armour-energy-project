@@ -2,51 +2,69 @@
 /********* General CSS *********/
 /*******************************/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neucha&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --primary-color: #275143;
-  --secondary-color: #e9c675;
-  --light-green-color: #a4d24e;
-  --dark-green-color: #0a1e27;
-  --light-brown-color: #e9b094;
-  --text-light: #f3f6ff;
-  --white: hsl(0, 0%, 100%);
-  --black: #000
-  --max-width: 1200px;
-  --header-font: "Oxygen", serif;
+    --primary-color: #275143;
+    --secondary-color: #fefae0;
+    --tertiary-color: #e9c675;
+    --light-green-color: #606c38;
+    --dark-green-color: #283618;
+    --light-brown-color: #dda15e;
+    --dark-brown-color: #bc6c25;
+    --off-white: #f8f9fa;
+    --white: hsl(0, 0%, 100%);
+    --gray: #666;
+    --very-light-gray: #ddd;
+    --very-dark-gray: #121518;
+    --black: #000;
+    --extra-light-charcoal: rgba(256, 256, 256, 0.4);
+    --light-charcoal: rgba(256, 256, 256, 0.3);
+    --charcoal: rgba(256, 256, 256, 0.1);
+    --medium-light-charcoal: rgba(256, 256, 256, 0.2);
+    --dark-charcoal: rgba(255, 255, 255, 0.1);
+    --dark-blue: rgba(3, 15, 39, 0.7);
+    --medium-gray: #999999;
+    --very-dark-red: rgba(0, 0, 0, 0.3);
+    --creamy-blue: #f3f6ff;
+    --blue-1: #3f729b;
+    --blue-2: #0e76a8;
+    --blue-3: #3b5998;
+    --blue-4: #00acee;
+    --max-width: 1200px;
+    --header-font: "Oxygen", serif;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    color: #666666;
-    background: #dddddd;
-    font-family: 'Poppins', sans-serif;
+    color: var(--gray);
+    background: var(--very-light-gray);
+    font-family: var(--header-font), sans-serif;
     font-weight: 400;
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
-    color: #030f27;
+    color: var(--dark-green-color);
 }
 
 a {
-    color: #666666;
-    transition: .3s;
+    color: var(--gray);
+    transition: 0.3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #fdbe33;
+    color: var(--secondary-color);
     outline: none;
     text-decoration: none;
 }
@@ -60,14 +78,14 @@ a:focus {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
-    background: #ffffff;
+    background: var(--white);
 }
 
 .back-to-top {
     position: fixed;
     display: none;
-    background: #fdbe33;
-    color: #121518;
+    background: var(--secondary-color);
+    color: var(--very-dark-gray);
     width: 44px;
     height: 44px;
     text-align: center;
@@ -80,8 +98,8 @@ a:focus {
 }
 
 .back-to-top:hover {
-    color: #fdbe33;
-    background: #121518;
+    color: var(--secondary-color);
+    background: var(--very-dark-gray);
 }
 
 .back-to-top i {
@@ -89,9 +107,8 @@ a:focus {
 }
 
 .btn {
-    transition: .3s;
+    transition: 0.3s;
 }
-
 
 /**********************************/
 /********** Top Bar CSS ***********/
@@ -99,7 +116,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .top-bar .logo {
@@ -110,7 +127,7 @@ a:focus {
 
 .top-bar .logo h1 {
     margin: 0;
-    color: #030f27;
+    color: var(--dark-green-color);
     font-size: 45px;
     line-height: 60px;
     font-weight: 700;
@@ -136,7 +153,7 @@ a:focus {
 
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
-    color: #030f27;
+    color: var(--dark-green-color);
     font-size: 40px;
 }
 
@@ -146,14 +163,14 @@ a:focus {
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
-    color: #030f27;
+    color: var(--dark-green-color);
     font-size: 16px;
     font-weight: 400;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
-    color: #030f27;
+    color: var(--dark-green-color);
     font-size: 13px;
     font-weight: 400;
 }
@@ -170,14 +187,13 @@ a:focus {
     }
 }
 
-
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
-    transition: .3s;
+    background: var(--secondary-color);
+    transition: 0.3s;
 }
 
 .nav-bar .container-fluid {
@@ -189,13 +205,13 @@ a:focus {
     top: 0;
     width: 100%;
     max-width: 1366px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 5px var(--very-dark-red);
     z-index: 999;
 }
 
 .nav-bar .navbar {
     height: 100%;
-    background: #030f27 !important;
+    background: var(--dark-green-color) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -203,12 +219,12 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: var(--tertiary-color);
     transition: none;
 }
 
@@ -216,38 +232,38 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: var(--off-white);
 }
 
 .nav-bar .btn {
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: var(--white);
+    border: 2px solid var(--white);
     border-radius: 0;
 }
 
 .nav-bar .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 @media (min-width: 992px) {
     .nav-bar {
         padding: 0 75px;
     }
-    
+
     .nav-bar.nav-sticky {
         padding: 0;
     }
-    
+
     .nav-bar .navbar {
         padding: 20px;
     }
-    
+
     .nav-bar .navbar-brand {
         display: none;
     }
-    
+
     .nav-bar a.nav-link {
         padding: 8px 15px;
         font-size: 15px;
@@ -259,20 +275,19 @@ a:focus {
     .nav-bar .navbar {
         padding: 15px;
     }
-    
+
     .nav-bar a.nav-link {
         padding: 5px;
     }
-    
+
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
+
     .nav-bar .btn {
         display: none;
     }
 }
-
 
 /*******************************/
 /******** Carousel CSS *********/
@@ -307,7 +322,7 @@ a:focus {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .3);
+    background: var(--very-dark-red);
     z-index: 1;
 }
 
@@ -324,14 +339,14 @@ a:focus {
 }
 
 .carousel .carousel-caption p {
-    color: #ffffff;
+    color: var(--white);
     font-size: 30px;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .carousel .carousel-caption h1 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 35px;
@@ -343,17 +358,17 @@ a:focus {
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white);
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--white);
     border-radius: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .carousel .carousel-caption .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 @media (max-width: 767.98px) {
@@ -361,11 +376,11 @@ a:focus {
         font-size: 40px;
         font-weight: 700;
     }
-    
+
     .carousel .carousel-caption p {
         font-size: 20px;
     }
-    
+
     .carousel .carousel-caption .btn {
         padding: 12px 30px;
         font-size: 18px;
@@ -379,11 +394,11 @@ a:focus {
         font-size: 30px;
         font-weight: 500;
     }
-    
+
     .carousel .carousel-caption p {
         font-size: 16px;
     }
-    
+
     .carousel .carousel-caption .btn {
         padding: 10px 25px;
         font-size: 16px;
@@ -397,7 +412,6 @@ a:focus {
     animation-duration: 1.5s;
 }
 
-
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
@@ -406,12 +420,12 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .page-header h2 {
     position: relative;
-    color: #030f27;
+    color: var(--dark-green-color);
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -425,18 +439,18 @@ a:focus {
     height: 2px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #030f27;
+    background: var(--dark-green-color);
 }
 
 .page-header a {
     position: relative;
     padding: 0 12px;
     font-size: 22px;
-    color: #030f27;
+    color: var(--dark-green-color);
 }
 
 .page-header a:hover {
-    color: #ffffff;
+    color: var(--light-brown-color);
 }
 
 .page-header a::after {
@@ -447,7 +461,7 @@ a:focus {
     top: -2px;
     right: -7px;
     text-align: center;
-    color: #121518;
+    color: var(--very-dark-gray);
 }
 
 .page-header a:last-child::after {
@@ -458,11 +472,11 @@ a:focus {
     .page-header {
         padding: 60px 0;
     }
-    
+
     .page-header h2 {
         font-size: 45px;
     }
-    
+
     .page-header a {
         font-size: 20px;
     }
@@ -472,16 +486,15 @@ a:focus {
     .page-header {
         padding: 45px 0;
     }
-    
+
     .page-header h2 {
         font-size: 35px;
     }
-    
+
     .page-header a {
         font-size: 18px;
     }
 }
-
 
 /*******************************/
 /******* Section Header ********/
@@ -493,7 +506,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #fdbe33;
+    color: var(--dark-brown-color);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -512,7 +525,6 @@ a:focus {
     }
 }
 
-
 /*******************************/
 /********* Feature CSS *********/
 /*******************************/
@@ -522,12 +534,12 @@ a:focus {
 }
 
 .feature .col-md-12 {
-    background: #030f27;
+    background: var(--dark-green-color);
 }
-    
+
 .feature .col-md-12:nth-child(2n) {
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
 }
 
 .feature .feature-item {
@@ -553,7 +565,7 @@ a:focus {
     height: 80px;
     top: -20px;
     left: -10px;
-    border: 2px dotted #ffffff;
+    border: 2px dotted var(--white);
     border-radius: 60px;
     z-index: 1;
 }
@@ -565,19 +577,19 @@ a:focus {
     height: 79px;
     top: -18px;
     left: -9px;
-    background: #030f27;
+    background: var(--dark-green-color);
     border-radius: 60px;
     z-index: 2;
 }
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .feature .feature-icon [class^="flaticon-"]::before {
     position: relative;
     margin: 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 60px;
     line-height: 60px;
     z-index: 3;
@@ -589,14 +601,14 @@ a:focus {
 
 .feature .feature-text h3 {
     margin: 0 0 10px 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 24px;
     font-weight: 600;
 }
 
 .feature .feature-text p {
     margin: 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 14px;
     font-weight: 400;
 }
@@ -604,10 +616,8 @@ a:focus {
 .feature .col-md-12:nth-child(2n) [class^="flaticon-"]::before,
 .feature .col-md-12:nth-child(2n) h3,
 .feature .col-md-12:nth-child(2n) p {
-    color: #030f27;
+    color: var(--dark-green-color);
 }
-
-
 
 /*******************************/
 /********** About CSS **********/
@@ -644,15 +654,15 @@ a:focus {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #030f27;
+    color: var(--dark-green-color);
     border-radius: 0;
-    background: #fdbe33;
-    transition: .3s;
+    background: var(--secondary-color);
+    transition: 0.3s;
 }
 
 .about .about-text a.btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 @media (max-width: 767.98px) {
@@ -661,7 +671,6 @@ a:focus {
         height: auto;
     }
 }
-
 
 /*******************************/
 /********** Fact CSS ***********/
@@ -690,13 +699,13 @@ a:focus {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#ffffff, #fdbe33);
+    background-image: linear-gradient(var(--white), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .fact .fact-right .fact-icon [class^="flaticon-"]::before {
-    background-image: linear-gradient(#ffffff, #030f27);
+    background-image: linear-gradient(var(--white), var(--dark-green-color));
 }
 
 .fact .fact-left,
@@ -718,19 +727,18 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 .fact .fact-right {
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
 }
 
 .fact .fact-left h2 {
-    color: #fdbe33;
+    color: var(--secondary-color);
 }
-
 
 /*******************************/
 /********* Service CSS *********/
@@ -767,8 +775,8 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(3, 15, 39, .7);
-    transition: .5s;
+    background: var(--dark-blue);
+    transition: 0.5s;
     opacity: 0;
 }
 
@@ -778,14 +786,14 @@ a:focus {
 
 .service .service-overlay p {
     margin: 0;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .service .service-text {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--dark-green-color);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -797,7 +805,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: var(--secondary-color);
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -814,16 +822,15 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
     border-radius: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .service .service-item:hover a.btn {
-    color: #ffffff;
+    color: var(--light-green-color);
 }
-
 
 /*******************************/
 /*********** Team CSS **********/
@@ -855,29 +862,30 @@ a:focus {
     position: relative;
     padding: 5px 5px;
     text-align: center;
-    background: #030f27;
-    transition: .5s;
+    background: var(--dark-green-color);
+    transition: 0.5s;
 }
 
 .team .team-text h2 {
     font-size: 16px;
     font-weight: 600;
-    color: #fdbe33;
-    transition: .5s;
+    color: var(--secondary-color);
+    transition: 0.5s;
 }
 
 .team .team-text p {
     margin: 0;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .team .team-item:hover .team-text {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
-.team .team-item:hover .team-text h2 {
-    color: #030f27;
+.team .team-item:hover .team-text h2,
+.team .team-item:hover .team-text p {
+    color: var(--dark-green-color);
     letter-spacing: 1px;
 }
 
@@ -900,34 +908,32 @@ a:focus {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .team .team-item:hover .team-social a:first-child {
-    background: #00acee;
+    background: var(--blue-4);
     left: 50px;
-    transition: .3s 0s;
+    transition: 0.3s 0s;
 }
 
 .team .team-item:hover .team-social a:nth-child(2) {
-    background: #3b5998;
+    background: var(--blue-3);
     left: 50px;
-    transition: .3s .1s;
+    transition: 0.3s 0.1s;
 }
 
 .team .team-item:hover .team-social a:nth-child(3) {
-    background: #0e76a8;
+    background: var(--blue-2);
     left: 50px;
-    transition: .3s .2s;
+    transition: 0.3s 0.2s;
 }
 
 .team .team-item:hover .team-social a:nth-child(4) {
-    background: #3f729b;
+    background: var(--blue-1);
     left: 50px;
-    transition: .3s .3s;
+    transition: 0.3s 0.3s;
 }
-
-
 
 /*******************************/
 /******* Testimonial CSS *******/
@@ -937,7 +943,8 @@ a:focus {
     margin: 45px 0;
     padding: 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(3, 15, 39, 0.9), rgba(3, 15, 39, 0.9)),
+        url(../img/carousel-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -961,7 +968,7 @@ a:focus {
 .testimonial .testimonial-slider-nav .slick-slide {
     position: relative;
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial .testimonial-slider-nav .slick-active {
@@ -1000,7 +1007,7 @@ a:focus {
 }
 
 .testimonial .testimonial-slider h3 {
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 22px;
     font-weight: 700;
 }
@@ -1008,30 +1015,25 @@ a:focus {
 .testimonial .testimonial-slider h4 {
     font-size: 14px;
     font-weight: 300;
-    color: #ffffff;
+    color: var(--white);
     font-style: italic;
     margin-bottom: 10px;
 }
 
 .testimonial .testimonial-slider p {
-    color: #ffffff;
+    color: var(--white);
     font-size: 16px;
     font-weight: 300;
     margin: 0;
 }
 
-
 /*******************************/
 /*********** About Page CSS **********/
 /*******************************/
-.section-shade{
-    background: var(--text-light);
+.section-shade {
+    background: var();
     padding: 45px 0;
 }
-
-
-
-
 
 /*******************************/
 /*********** Blog CSS **********/
@@ -1062,7 +1064,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--dark-green-color);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1074,7 +1076,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 18px;
     font-weight: 700;
-    color: #fdbe33;
+    color: var(--secondary-color);
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -1091,20 +1093,20 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
     border-radius: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .blog .blog-item:hover a.btn {
-    color: #ffffff;
+    color: var(--light-green-color);
 }
 
 .blog .blog-meta {
     position: relative;
     padding: 25px 0 10px 0;
-    background: #f3f6ff;
+    background: var(--creamy-blue);
 }
 
 .blog .blog-meta::after {
@@ -1114,7 +1116,7 @@ a:focus {
     height: 1px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .blog .blog-meta p {
@@ -1124,7 +1126,7 @@ a:focus {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
-    color: #666666;
+    color: var(--gray);
 }
 
 .blog .blog-meta p a {
@@ -1134,7 +1136,7 @@ a:focus {
 
 .blog .blog-text {
     padding: 10px 25px 25px 25px;
-    background: #f3f6ff;
+    background: var(--creamy-blue);
 }
 
 .blog .blog-text p {
@@ -1143,21 +1145,20 @@ a:focus {
 }
 
 .blog .pagination .page-link {
-    color: #030f27;
+    color: var(--dark-green-color);
     border-radius: 0;
-    border-color: #fdbe33;
+    border-color: var(--secondary-color);
 }
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 .blog .pagination .disabled .page-link {
-    color: #999999;
+    color: var(--medium-gray);
 }
-
 
 /*******************************/
 /******* Single Post CSS *******/
@@ -1189,19 +1190,19 @@ a:focus {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
-    color: #666666;
-    border: 1px solid #dddddd;
+    color: var(--gray);
+    border: 1px solid var(--very-light-gray);
 }
 
 .single .single-tags a:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 .single .single-bio {
     margin-bottom: 45px;
     padding: 30px;
-    background: #f3f6ff;
+    background: var(--creamy-blue);
     display: flex;
 }
 
@@ -1308,16 +1309,16 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
     font-size: 16px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .single .related-slider .owl-nav .owl-prev:hover,
 .single .related-slider .owl-nav .owl-next:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 .single .single-comment {
@@ -1374,13 +1375,13 @@ a:focus {
 .single .comment-text .btn {
     padding: 3px 10px;
     font-size: 14px;
-    color: #030f27;
-    background: #dddddd;
+    color: var(--dark-green-color);
+    background: var(--very-light-gray);
     border-radius: 0;
 }
 
 .single .comment-text .btn:hover {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .single .comment-form {
@@ -1395,7 +1396,7 @@ a:focus {
 
 .single .comment-form form {
     padding: 30px;
-    background: #f3f6ff;
+    background: var(--creamy-blue);
 }
 
 .single .comment-form form .form-group:last-child {
@@ -1409,15 +1410,14 @@ a:focus {
 
 .single .comment-form .btn {
     padding: 15px 30px;
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
 }
 
 .single .comment-form .btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
-
 
 /**********************************/
 /*********** Sidebar CSS **********/
@@ -1427,7 +1427,7 @@ a:focus {
     width: 100%;
 }
 
-@media(max-width: 991.98px) {
+@media (max-width: 991.98px) {
     .sidebar {
         margin-top: 45px;
     }
@@ -1453,7 +1453,7 @@ a:focus {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .sidebar .sidebar-widget .search-widget {
@@ -1462,7 +1462,7 @@ a:focus {
 
 .sidebar .search-widget input {
     height: 50px;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--very-light-gray);
     border-radius: 0;
 }
 
@@ -1477,15 +1477,15 @@ a:focus {
     height: 40px;
     padding: 0;
     font-size: 25px;
-    color: #fdbe33;
+    color: var(--secondary-color);
     background: none;
     border-radius: 0;
     border: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .sidebar .search-widget .btn:hover {
-    color: #030f27;
+    color: var(--dark-green-color);
 }
 
 .sidebar .sidebar-widget .recent-post {
@@ -1497,15 +1497,15 @@ a:focus {
 }
 
 .sidebar .tab-post .nav.nav-pills .nav-link {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
     border-radius: 0;
 }
 
 .sidebar .tab-post .nav.nav-pills .nav-link:hover,
 .sidebar .tab-post .nav.nav-pills .nav-link.active {
-    color: #030f27;
-    background: #fdbe33;
+    color: var(--dark-green-color);
+    background: var(--secondary-color);
 }
 
 .sidebar .tab-post .tab-content {
@@ -1528,11 +1528,11 @@ a:focus {
 }
 
 .sidebar .category-widget ul li {
-    margin: 0 0 12px 22px; 
+    margin: 0 0 12px 22px;
 }
 
 .sidebar .category-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar .category-widget ul li a {
@@ -1542,10 +1542,10 @@ a:focus {
 
 .sidebar .category-widget ul li::before {
     position: absolute;
-    content: '\f105';
-    font-family: 'Font Awesome 5 Free';
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: #fdbe33;
+    color: var(--secondary-color);
     left: 1px;
 }
 
@@ -1565,13 +1565,13 @@ a:focus {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
-    color: #666666;
-    border: 1px solid #dddddd;
+    color: var(--gray);
+    border: 1px solid var(--very-light-gray);
 }
 
 .single .tag-widget a:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 .sidebar .image-widget {
@@ -1582,13 +1582,12 @@ a:focus {
 
 .sidebar .image-widget img {
     max-width: 100%;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .sidebar .image-widget img:hover {
     transform: scale(1.1);
 }
-
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -1612,20 +1611,20 @@ a:focus {
     display: inline-block;
     margin: 5px;
     padding: 8px 15px;
-    color: #030f27;
+    color: var(--dark-green-color);
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
     border: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #030f27;
-    color: #fdbe33;
+    background: var(--dark-green-color);
+    color: var(--secondary-color);
 }
 
 .portfolio .load-more {
@@ -1635,12 +1634,12 @@ a:focus {
 .portfolio .load-more .btn {
     padding: 15px 35px;
     font-size: 16px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .portfolio .load-more .btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
 }
 
 .portfolio .portfolio-warp {
@@ -1657,7 +1656,7 @@ a:focus {
 
 .portfolio .portfolio-img img {
     width: 100%;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .portfolio .portfolio-item:hover img {
@@ -1674,8 +1673,8 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(3, 15, 39, .7);
-    transition: .5s;
+    background: var(--dark-blue);
+    transition: 0.5s;
     opacity: 0;
 }
 
@@ -1685,14 +1684,14 @@ a:focus {
 
 .portfolio .portfolio-overlay p {
     margin: 0;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .portfolio .portfolio-text {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #030f27;
+    background: var(--dark-green-color);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1704,7 +1703,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: var(--secondary-color);
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -1721,17 +1720,16 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
-    background: #ffffff;
+    color: var(--dark-green-color);
+    background: var(--white);
     border-radius: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .portfolio .portfolio-warp:hover a.btn {
-    color: #ffffff;
-    background: #fdbe33;
+    color: var(--white);
+    background: var(--secondary-color);
 }
-
 
 /*******************************/
 /********* Contact CSS *********/
@@ -1748,11 +1746,11 @@ a:focus {
 }
 
 .contact .col-md-6:first-child {
-    background: #030f27;
+    background: var(--dark-green-color);
 }
 
 .contact .col-md-6:last-child {
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .contact .contact-info {
@@ -1768,12 +1766,12 @@ a:focus {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    border: 1px solid rgba(256, 256, 256, .2);
+    border: 1px solid var(--medium-light-charcoal);
 }
 
 .contact .contact-item [class^="flaticon-"]::before {
     margin: 0;
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 40px;
 }
 
@@ -1784,14 +1782,14 @@ a:focus {
 }
 
 .contact .contact-text h2 {
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-size: 20px;
     font-weight: 600;
 }
 
 .contact .contact-text p {
     margin: 0;
-    color: #ffffff;
+    color: var(--white);
     font-size: 16px;
 }
 
@@ -1805,20 +1803,20 @@ a:focus {
 }
 
 .contact .contact-form input {
-    color: #ffffff;
+    color: var(--very-dark-gray);
     height: 40px;
     border-radius: 0;
     border-width: 1px;
-    border-color: rgba(256, 256, 256, .4);
+    border-color: var(--very-dark-gray);
     background: transparent;
 }
 
 .contact .contact-form textarea {
-    color: #ffffff;
+    color: var(--very-dark-gray);
     height: 185px;
     border-radius: 0;
     border-width: 1px;
-    border-color: rgba(256, 256, 256, .4);
+    border-color: var(--very-dark-gray);
     background: transparent;
 }
 
@@ -1828,32 +1826,32 @@ a:focus {
 }
 
 .contact .contact-form .form-control::placeholder {
-  color: #ffffff;
-  opacity: 1;
+    color: var(--medium-gray);
+    opacity: 1;
 }
 
 .contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+    color: var(--very-dark-gray);
 }
 
 .contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+    color: var(--very-dark-gray);
 }
 
 .contact .contact-form .btn {
     padding: 16px 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #fdbe33;
-    background: #030f27;
+    color: var(--secondary-color);
+    background: var(--dark-green-color);
     border: none;
     border-radius: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .contact .contact-form .btn:hover {
-    color: #030f27;
-    background: #ffffff;
+    color: var(--dark-green-color);
+    background: var(--white);
 }
 
 .contact .help-block ul {
@@ -1862,7 +1860,6 @@ a:focus {
     list-style-type: none;
 }
 
-
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
@@ -1870,8 +1867,8 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #030f27;
-    color: #ffffff;
+    background: var(--dark-green-color);
+    color: var(--white);
 }
 
 .footer .footer-contact,
@@ -1881,11 +1878,11 @@ a:focus {
     margin-bottom: 45px;
 }
 
-.footer .footer-contact .footer-address{
+.footer .footer-contact .footer-address {
     font-size: 14px;
 }
 
-.footer .cookie-text{
+.footer .cookie-text {
     font-size: 10px;
 }
 
@@ -1895,7 +1892,7 @@ a:focus {
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
-    color: #fdbe33;
+    color: var(--secondary-color);
 }
 
 .footer h2::after {
@@ -1905,14 +1902,14 @@ a:focus {
     height: 2px;
     left: 0;
     bottom: 0;
-    background: #fdbe33;
+    background: var(--secondary-color);
 }
 
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
-    color: #ffffff;
-    transition: .3s;
+    color: var(--white);
+    transition: 0.3s;
 }
 
 .footer .footer-link a::before {
@@ -1924,7 +1921,7 @@ a:focus {
 }
 
 .footer .footer-link a:hover {
-    color: #fdbe33;
+    color: var(--tertiary-color);
     letter-spacing: 1px;
 }
 
@@ -1943,23 +1940,23 @@ a:focus {
     height: 40px;
     padding: 7px 0;
     text-align: center;
-    border: 1px solid rgba(256, 256, 256, .3);
+    border: 1px solid var(--light-charcoal);
     border-radius: 60px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .footer-social a i {
     font-size: 15px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .footer .footer-social a:hover {
-    background: #fdbe33;
-    border-color: #fdbe33;
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .footer .footer-social a:hover i {
-    color: #030f27;
+    color: var(--dark-green-color);
 }
 
 .footer .newsletter .form {
@@ -1970,7 +1967,7 @@ a:focus {
 
 .footer .newsletter input {
     height: 50px;
-    border: 2px solid #121518;
+    border: 2px solid var(--very-dark-gray);
     border-radius: 0;
 }
 
@@ -1983,16 +1980,16 @@ a:focus {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fdbe33;
-    background: #121518;
+    color: var(--secondary-color);
+    background: var(--very-dark-gray);
     border-radius: 0;
-    border: 2px solid #fdbe33;
-    transition: .3s;
+    border: 2px solid var(--secondary-color);
+    transition: 0.3s;
 }
 
 .footer .newsletter .btn:hover {
-    color: #121518;
-    background: #fdbe33;
+    color: var(--very-dark-gray);
+    background: var(--tertiary-color);
 }
 
 .footer .footer-menu .f-menu {
@@ -2000,20 +1997,20 @@ a:focus {
     padding: 15px 0;
     font-size: 0;
     text-align: center;
-    border-top: 1px solid rgba(256, 256, 256, .1);
-    border-bottom: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid var(--charcoal);
+    border-bottom: 1px solid var(--charcoal);
 }
 
 .footer .footer-menu .f-menu a {
-    color: #ffffff;
+    color: var(--white);
     font-size: 16px;
     margin-right: 15px;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid var(--dark-charcoal);
 }
 
 .footer .footer-menu .f-menu a:hover {
-    color: #fdbe33;
+    color: var(--tertiary-color);
 }
 
 .footer .footer-menu .f-menu a:last-child {
@@ -2022,14 +2019,13 @@ a:focus {
     border-right: none;
 }
 
-
 .footer .copyright {
     padding: 30px 15px;
 }
 
 .footer .copyright p {
     margin: 0;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .footer .copyright .col-md-6:last-child p {
@@ -2037,13 +2033,13 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #fdbe33;
+    color: var(--secondary-color);
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 .footer .copyright p a:hover {
-    color: #ffffff;
+    color: var(--tertiary-color);
 }
 
 @media (max-width: 768px) {
