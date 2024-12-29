@@ -56,7 +56,7 @@
     });
     
     
-    // Modal Video
+ /*    // Modal Video
     $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
@@ -72,7 +72,7 @@
             $("#video").attr('src', $videoSrc);
         })
     });
-
+ */
 
     // Testimonial Slider
     $('.testimonial-slider').slick({
