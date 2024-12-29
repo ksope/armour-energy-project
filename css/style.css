@@ -9,7 +9,7 @@
   --light-green-color: #a4d24e;
   --dark-green-color: #0a1e27;
   --light-brown-color: #e9b094;
-  --text-light: #cbd5e1;
+  --text-light: #f3f6ff;
   --white: hsl(0, 0%, 100%);
   --black: #000
   --max-width: 1200px;
@@ -1022,6 +1022,18 @@ a:focus {
 
 
 /*******************************/
+/*********** About Page CSS **********/
+/*******************************/
+.section-shade{
+    background: var(--text-light);
+    padding: 45px 0;
+}
+
+
+
+
+
+/*******************************/
 /*********** Blog CSS **********/
 /*******************************/
 .blog {
@@ -1871,6 +1883,10 @@ a:focus {
 
 .footer .footer-contact .footer-address{
     font-size: 14px;
+}
+
+.footer .cookie-text{
+    font-size: 10px;
 }
 
 .footer h2 {
