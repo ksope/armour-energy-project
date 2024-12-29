@@ -1869,6 +1869,10 @@ a:focus {
     margin-bottom: 45px;
 }
 
+.footer .footer-contact .footer-address{
+    font-size: 14px;
+}
+
 .footer h2 {
     position: relative;
     margin-bottom: 20px;
